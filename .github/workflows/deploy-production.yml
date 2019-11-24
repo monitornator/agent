@@ -25,4 +25,4 @@ jobs:
         KEY: ${{ secrets.SSH_PRIVATE_KEY }}
       with:
         source: "install.sh,monitornator.py"
-        target: /home/${{ secrets.USERNAME }}/agent
+        target: /home/${{ secrets.PRODUCTION_USERNAME }}/agent
