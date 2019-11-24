@@ -25,3 +25,7 @@ These dependencies are being installed if not yet present:
 - python3-setuptools
 - python3-pip
 - supervisor
+
+## License
+
+[MIT](LICENSE)
