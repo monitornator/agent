@@ -26,6 +26,15 @@ These dependencies are being installed if not yet present:
 - python3-pip
 - supervisor
 
+## Collected and saved data
+
+- load <number>
+- memory <number>
+- disk <number>
+- agentVersion <string>
+- time <number>
+- serverId <string>
+
 ## License
 
 [MIT](LICENSE)
