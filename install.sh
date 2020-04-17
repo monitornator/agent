@@ -69,6 +69,13 @@ detectOs () {
                 currentlyNotSupported
             fi
             ;;
+        'Raspbian GNU/Linux')
+            if [ $VER == '10' ]; then
+                setupUbuntu
+            else
+                currentlyNotSupported
+            fi
+            ;;
         *)
             currentlyNotSupported
     esac
@@ -90,6 +97,7 @@ setupUbuntu () {
     AGENT_DIR="/usr/local/bin/monitornator"
     AGENT_CONFIG_DIR="/etc/monitornator"
     echo "Setting up Monitornator on Ubuntu"
+    sudo apt-get install software-properties-common -y
     sudo add-apt-repository universe
     sudo apt-get install build-essential python3 python3-dev python3-setuptools python3-pip supervisor -y
     setupPython
@@ -128,6 +136,7 @@ setupPython() {
 getConfirmation() {
   echo ""
   echo "This script will install Monitornator agent on your system including the following dependencies (if not yet present):"
+  echo "- software-properties-common"
   echo "- build-essential"
   echo "- python3"
   echo "- python3-dev"

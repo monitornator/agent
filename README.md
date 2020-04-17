@@ -12,6 +12,7 @@ bash <(curl -sSL https://agent.monitornator.io/install.sh) --server-id=${SERVER_
 
 - Ubuntu 14.04, 16.04, 18.04, 18.10
 - Debian 9
+- Raspbian 10
 
 More supported systems coming soon.
 
@@ -19,6 +20,7 @@ More supported systems coming soon.
 
 These dependencies are being installed if not yet present:
 
+- software-properties-common
 - build-essential
 - python3
 - python3-dev
