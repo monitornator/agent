@@ -52,6 +52,9 @@ detectOs () {
         'Debian GNU/Linux')
             if [ $VER == '9' ]; then
                 setupUbuntu
+            elif [ $VER == '10' ]; then
+                setupUbuntu
+            else
             else
                 currentlyNotSupported
             fi
