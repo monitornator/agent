@@ -10,8 +10,8 @@ bash <(curl -sSL https://agent.monitornator.io/install.sh) --server-id=${SERVER_
 
 ## Currently supported
 
-- Ubuntu 14.04, 16.04, 18.04, 18.10
-- Debian 9
+- Ubuntu 14.04, 16.04, 18.04, 18.10, 20.04
+- Debian 9 and 10
 - Raspbian 10
 
 More supported systems coming soon.
