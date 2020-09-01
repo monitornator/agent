@@ -66,6 +66,8 @@ detectOs () {
                 setupUbuntu
             elif [ $VER == '18.10' ]; then
                 setupUbuntu
+            elif [ $VER == '20.04' ]; then
+                setupUbuntu
             elif [ $VER == '14.04' ]; then
                 setupUbuntu
             else
